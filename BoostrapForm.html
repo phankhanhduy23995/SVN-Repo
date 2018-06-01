@@ -8,7 +8,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  
+  <style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: rgb(178, 180, 180);
+       color: rgb(14, 10, 10);
+       text-align: center;
+    }
+    </style>
 </head>
 <body>
   <div class="">
@@ -36,6 +46,9 @@
     <a href="#" type="submit" onclick="hienthi()" class="btn btn-primary">Submit</a>
     <a href="#" type="submit" onclick="exit()" class="btn btn-danger">Exit</a>
   </form>
+</div>
+<div class="footer">
+  <h1>This is Footer</h1>
 </div>
 <script type="text/javascript">
   function hienthi(){
