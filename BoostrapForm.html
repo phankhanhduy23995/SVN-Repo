@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>LAB2</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -11,9 +11,14 @@
   
 </head>
 <body>
-
+  <div class="">
+    <div class="jumbotron">
+      <h1 style="text-align: center"><b>Công cụ và môi trường phát triển phần mềm</b></h1>      
+      <h2 style="text-align: center">Phan Khánh Duy - Thực hành LAB2</h2>
+    </div> 
+  </div>
 <div class="container">
-  <h2>Stacked form</h2>
+  <h2>Form đăng ký tài khoản</h2>
   <form action="/action_page.php">
     <div class="form-group">
       <label for="email">Username</label>
@@ -29,7 +34,7 @@
     </div>
     <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
     <a href="#" type="submit" onclick="hienthi()" class="btn btn-primary">Submit</a>
-    <a href="#" type="submit" class="btn btn-danger">Exit</a>
+    <a href="#" type="submit" onclick="exit()" class="btn btn-danger">Exit</a>
   </form>
 </div>
 <script type="text/javascript">
@@ -37,6 +42,9 @@
     var tk = document.getElementById("user").value;
     alert("Chúc mừng "+tk+" đã đăng ký thành công!");
   }
+  function exit() {
+    window.close();
+}
 </script>
 </body>
 </html>
