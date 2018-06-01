@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
 
@@ -26,10 +27,16 @@
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="submit" class="btn btn-danger">Exit</button>
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    <a href="#" type="submit" onclick="hienthi()" class="btn btn-primary">Submit</a>
+    <a href="#" type="submit" class="btn btn-danger">Exit</a>
   </form>
 </div>
-
+<script type="text/javascript">
+  function hienthi(){
+    var tk = document.getElementById("user").value;
+    alert("Chúc mừng "+tk+" đã đăng ký thành công!");
+  }
+</script>
 </body>
 </html>
