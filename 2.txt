@@ -1,1 +1,1 @@
-#Thay doi trong 2.txt
+@2
